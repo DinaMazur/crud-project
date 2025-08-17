@@ -6,7 +6,8 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "npx json-server students.json"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "description": "",
   "dependencies": {
     "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.3",
     "parcel": "^2.15.4"
+    
   },
   "devDependencies": {
     "parcel-reporter-clean-dist": "^1.0.4",

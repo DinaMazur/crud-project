@@ -1,45 +1,125 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+
+    <title>CRUD Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
     <div class="container">
-    <h1>Список студентів</h1>
-    <button id="get-students-btn">Отримати студентів</button>
 
-    <table id="students-table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Ім'я</th>
-          <th>Вік</th>
-          <th>Курс</th>
-          <th>Навички</th>
-          <th>Email</th>
-          <th>Статус</th>
-          <th>Дії</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Студенти будуть вставлені тут -->
-      </tbody>
-    </table>
+        <h1>Список студентів</h1>
 
-    <h2>Додати нового студента</h2>
-    <form id="add-student-form">
-      <label>Ім'я: <input type="text" id="name" required /></label>
-      <label>Вік: <input type="number" id="age" required /></label>
-      <label>Курс: <input type="text" id="course" required /></label>
-      <label>Навички (через кому): <input type="text" id="skills" required /></label>
-      <label>Email: <input type="email" id="email" required /></label>
-         <button class="addStudent" type="submit">Додати студента</button>   
-    </form>
-     </div>
+        <button id="get-students-btn">Отримати студентів</button>
 
-  <script type="module" src="./script.js"></script>
+
+
+        <table id="students-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Ім'я</th>
+
+                    <th>Вік</th>
+
+                    <th>Курс</th>
+
+                    <th>Навички</th>
+
+                    <th>Email</th>
+
+                    <th>Статус</th>
+
+                    <th>Дії</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody class="thbody">
+
+                <!-- Динамічно заповнено -->
+
+            </tbody>
+
+        </table>
+
+
+
+        <h2>Додати нового студента</h2>
+
+        <form id="add-student-form">
+
+            <label>Ім'я: <input name="name" type="text" id="name" required></label>
+
+            <label>Вік: <input name="number" type="number" id="age" required></label>
+
+            <label>Курс: <input name="course" type="text" id="course" required></label>
+
+            <label>Навички (через кому): <input name="skills" type="text" id="skills" required></label>
+
+            <label>Email: <input name="email" type="email" id="email" required></label>
+
+            <label>Записаний: <input name="enrolled" type="checkbox" id="isEnrolled"></label>
+
+            <button class="submit-btn" type="submit">Додати студента</button>
+
+        </form>
+
+    </div>
+
+    <div class="backdrop2 backdrop-styles hidden">
+        <div class="modal2 modal-styles">
+            <button class="close-modal2 close-modal-styles">X</button>
+            <form class="input-list modal-form2">
+
+                <div class="flexitem">
+                    <input name="name" placeholder="Name" type="text" class="name">
+                </div>
+
+                <div class="flexitem">
+                        <input name="age" placeholder="Age" min="0" type="number" class="age">
+                </div>
+
+                <div class="flexitem">
+                    <input name="course" placeholder="Courses" type="text" class="course">
+                </div>
+
+                <div class="flexitem">
+                    <input name="skills" placeholder="Skills" type="text" class="skills">
+                </div>
+
+                <div class="flexitem">
+                    <input name="email" placeholder="Email" type="text" class="email">
+                </div>
+
+                <div class="flexitem">
+                    
+                    <button type="submit" class="datasend2 datasend-styles">Update</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+
 </body>
+
 </html>
