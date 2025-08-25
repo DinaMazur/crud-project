@@ -1,3 +1,15 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "be2b",
+      "name": "max",
+      "age": 18,
+      "course": "3",
+      "skills": [
+        "програмування"
+      ],
+      "email": "mazurdr00@gmail.com",
+      "isEnrolled": false
+    }
+  ]
 }

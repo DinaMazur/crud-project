@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/DinaMazur/crud-project/issues"
   },
-  "homepage": "https://github.com/DinaMazur/crud-project#readme",
+  "homepage": "https://dinamazur.github.io/crud-project/",
   "description": "",
   "dependencies": {
     "gh-pages": "^6.3.0",
