@@ -1,15 +1,26 @@
 {
   "students": [
     {
-      "id": "be2b",
-      "name": "Olena",
-      "age": 18,
-      "course": "35",
+      "id": "ded8",
+      "name": "masha",
+      "age": 14,
+      "course": "2",
       "skills": [
         "програмування"
       ],
       "email": "mazurdr00@gmail.com",
-      "isEnrolled": false
+      "isEnrolled": true
+    },
+    {
+      "id": "3703",
+      "name": "nastya",
+      "age": 16,
+      "course": "3",
+      "skills": [
+        "uouyufgyu"
+      ],
+      "email": "thqtrhqtr@trryw",
+      "isEnrolled": true
     }
   ]
 }

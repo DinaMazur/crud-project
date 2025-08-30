@@ -25,6 +25,7 @@
     "json-server": "^1.0.0-beta.3",
     "parcel": "^2.15.4"
     
+    
   },
   "devDependencies": {
     "parcel-reporter-clean-dist": "^1.0.4",
